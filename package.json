@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/anqurvanillapy/tgwpa/issues"
   },
-  "homepage": "https://github.com/anqurvanillapy/tgwpa#readme"
+  "homepage": "https://github.com/anqurvanillapy/tgwpa#readme",
+  "dependencies": {
+    "electron": "^1.6.2"
+  }
 }
