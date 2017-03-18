@@ -1,5 +1,8 @@
-# Public static content for distribution
+# Public static content for distribution.
 dist/
+
+# main.js is the source of index.js, which should be transcompiled ahead.
+index.js
 
 #### joe made this: http://goel.io/joe
 
