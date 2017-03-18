@@ -1,9 +1,13 @@
 {
   "name": "tgwpa",
   "version": "0.1.0",
-  "description": "PA app for TGW",
+  "description": "PA desktop app for TGW",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/electron .",
+    "build": "BABEL_ENV=dist babel ./app -d dist/ && BABEL_ENV=dist babel main.js -o index.js",
+    "build:dev": "babel ./app -d dist/ && babel main.js -o index.js",
+    "clean": "rm -rf dist/ index.js",
     "test": "exit 1"
   },
   "repository": {
@@ -17,6 +21,14 @@
   },
   "homepage": "https://github.com/anqurvanillapy/tgwpa#readme",
   "dependencies": {
-    "electron": "^1.6.2"
+    "react": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-babili": "0.0.12",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-react": "^6.23.0",
+    "electron": "^1.6.2",
+    "react-dom": "^15.4.2"
   }
 }

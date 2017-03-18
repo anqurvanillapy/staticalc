@@ -1,0 +1,11 @@
+{
+  "env": {
+    "dist": {
+      "comments": false,
+      "presets": ["env", "react", "babili"]
+    },
+    "development": {
+      "presets": ["env", "react"]
+    }
+  }
+}

@@ -1,7 +1,7 @@
 tgwpa
 =====
 
-PA (performance appraisal) app for TGW (JNU Zhuhai Campus).
+PA (performance appraisal) desktop app for TGW (JNU Zhuhai Campus).
 
 License
 -------
