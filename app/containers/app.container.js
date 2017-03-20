@@ -1,6 +1,6 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 
-import Splash from '../components/spash.component'
+import Splash from '../components/splash.component'
 
 export default class AppContainer extends Component {
   render () {
