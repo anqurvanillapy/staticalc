@@ -2,10 +2,13 @@
   "env": {
     "dist": {
       "comments": false,
-      "presets": ["env", "react", "babili"]
+      "presets": ["env", "babili"]
     },
     "development": {
-      "presets": ["env", "react"]
+      "presets": ["env"]
     }
-  }
+  },
+  "plugins": [
+    ["transform-react-jsx", { "pragma":"h" }]
+  ]
 }

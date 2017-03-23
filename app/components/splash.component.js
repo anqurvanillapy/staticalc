@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { h, render, Component } from 'preact'
 
 export default class Splash extends Component {
   render () {

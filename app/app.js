@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import ReactDom from 'react-dom'
+import { h, render, Component } from 'preact'
 
 import AppContainer from './containers/app.container'
 
@@ -12,5 +11,5 @@ class App extends Component {
 }
 
 (function () {
-  ReactDom.render(<App />, document.getElementById('app'))
+  render(<App />, document.getElementById('app'))
 })()

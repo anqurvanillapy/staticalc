@@ -9,7 +9,7 @@
     "prebuild": "npm run clean && mkdir -p dist/",
     "build": "npm run build-app && npm run build-entry",
     "build:dev": "npm run build-app:dev && npm run build-entry:dev",
-    "build-app": "BABEL_ENV=dist browserify app/app.js -o dist/bundle.js -t babelify -t uglifyify",
+    "build-app": "browserify app/app.js -o dist/bundle.js -t babelify -g uglifyify",
     "build-app:dev": "browserify app/app.js -o dist/bundle.js -t babelify",
     "build-entry": "BABEL_ENV=dist babel main.js -o index.js",
     "build-entry:dev": "babel main.js -o index.js",
@@ -27,10 +27,6 @@
     "url": "https://github.com/anqurvanillapy/tgwpa/issues"
   },
   "homepage": "https://github.com/anqurvanillapy/tgwpa#readme",
-  "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-preset-babili": "0.0.12",
@@ -39,6 +35,7 @@
     "babelify": "^7.3.0",
     "browserify": "^14.1.0",
     "electron": "^1.6.2",
+    "preact": "^7.2.0",
     "uglifyify": "^3.0.4",
     "watchify": "^3.9.0"
   }
