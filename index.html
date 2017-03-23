@@ -21,11 +21,13 @@
      */
     .overlay.active {
       opacity: 100;
+      visibility: visible;
     }
 
     .overlay {
       opacity: 0;
-      transition: opacity .33s;
+      visibility: hidden;
+      transition: opacity .5s, visibility .5s;
     }
   </style>
 </head>

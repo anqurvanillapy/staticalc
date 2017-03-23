@@ -33,7 +33,7 @@ export default class Splash extends Component {
   }
 
   componentDidMount () {
-    setTimeout(_ => { this.setState({active: ''}) }, 2000)
+    setTimeout(_ => { this.setState({active: ''}) }, 1000)
   }
 
   render () {
