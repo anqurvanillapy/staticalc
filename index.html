@@ -16,6 +16,10 @@
       padding: 0;
     }
 
+    * {
+      box-sizing: border-box;
+    }
+
     /**
      *  Component-related non-inline styles (which makes components unreusable).
      */
@@ -26,12 +30,17 @@
 
     .overlay {
       opacity: 0;
-      visibility: hidden;
+      visibility: hidden; /* eliminates taborder */
       transition: opacity .5s, visibility .5s;
+    }
+
+    .navitem:hover {
+      box-shadow: 0 2px royalblue;
+      transition: box-shadow .5s;
     }
   </style>
 </head>
-<body id="app">
+<body>
 <script src="dist/bundle.js"></script>
 </body>
 </html>

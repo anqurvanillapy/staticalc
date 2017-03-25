@@ -9,11 +9,11 @@
     "prebuild": "npm run clean && mkdir -p dist/",
     "build": "npm run build-app && npm run build-entry",
     "build:dev": "npm run build-app:dev && npm run build-entry:dev",
-    "build-app": "browserify app/app.js -o dist/bundle.js -t babelify -g uglifyify",
-    "build-app:dev": "browserify app/app.js -o dist/bundle.js -t babelify",
+    "build-app": "browserify src/index.js -o dist/bundle.js -t babelify -g uglifyify",
+    "build-app:dev": "browserify src/index.js -o dist/bundle.js -t babelify",
     "build-entry": "BABEL_ENV=dist babel main.js -o index.js",
     "build-entry:dev": "babel main.js -o index.js",
-    "watch": "watchify app/app.js -o dist/bundle.js -t babelify --debug --verbose",
+    "watch": "watchify src/index.js -o dist/bundle.js -t babelify --debug --verbose",
     "clean": "rm -rf dist/ index.js",
     "test": "exit 1"
   },
@@ -36,6 +36,7 @@
     "browserify": "^14.1.0",
     "electron": "^1.6.2",
     "preact": "^7.2.0",
+    "preact-router": "^2.4.1",
     "uglifyify": "^3.0.4",
     "watchify": "^3.9.0"
   }
