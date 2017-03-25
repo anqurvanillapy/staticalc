@@ -2,7 +2,7 @@
 dist/
 
 # main.js is the source of index.js, which should be transcompiled ahead.
-./index.js
+/index.js
 
 #### joe made this: http://goel.io/joe
 
